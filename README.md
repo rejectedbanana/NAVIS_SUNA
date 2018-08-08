@@ -20,7 +20,6 @@ Nitrogen concentrations are calculated following Johnson et al 2016.
 Each cell in the worksheet can be executed using the run section button 
 or by typing ctrl-enter into the command line
 
-______\\
 KiM MARTiNi 03.2018
 kmartini@seabird.com 
 

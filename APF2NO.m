@@ -69,6 +69,7 @@ Sint = interp1( p, s, Pint);
 % make empty matrices to fill
 dat.MolarNitrate = nan( d1, 1); 
 dat.Nitrate = dat.MolarNitrate; 
+
 % cycle through each line of data
 for dd = 1:d1
     
@@ -97,7 +98,7 @@ for dd = 1:d1
         TEMP, PSAL, PRES);
     
     % add the data back to the original data structure
-    dat.MolarNitrate(dd) = MOLAR_NITRATE;
-    dat.Nitrate(dd) = NITRATE;
+    dat.Nmolar(dd) = MOLAR_NITRATE;
+    dat.N(dd) = NITRATE;
     
 end %dd
