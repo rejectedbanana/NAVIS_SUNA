@@ -8,11 +8,11 @@
 % mode such that the data format is in the APF frame.
 % 
 % The calibration data is provided to the customer by Sea-Bird upon initial
-% delivery as ASCII files with .cam file extension. When the reference
+% delivery as ASCII files with .cal file extension. When the reference
 % spectrum is updated by the customer upon delivery of the insttrument, the
 % a new .cal file will be produced and should be used to process the data.
 %
-% Nitrogen concentrations are calculated following Johnson et al 2016.
+% Nitrogen concentrations are calculated following Johnson et al (2016).
 %
 % Each cell in the worksheet can be executed using the run section button 
 % or by typing ctrl-enter into the command line

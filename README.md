@@ -1,6 +1,6 @@
 # Calculate nitrogen concentration from a SUNA on a Sea-Bird Navis BGCi
 
-This readme is a github friendly verions of calculate_Navis_Nitrogen_Worksheet.m
+This readme is a github friendly version of calculate_Navis_Nitrogen_Worksheet.m
 
 ## Load data from SUNA on a Sea-Bird Navis BGCi and calculate nitrogen
 This script imports SUNA data files (.isus) and SUNA calibration 
@@ -11,11 +11,11 @@ ASCII files with the .isus file extension. The SUNA is operating in APF
 mode such that the data format is in the APF frame.
 
 The calibration data is provided to the customer by Sea-Bird upon initial
-delivery as ASCII files with .cam file extension. When the reference
+delivery as ASCII files with .cal file extension. When the reference
 spectrum is updated by the customer upon delivery of the insttrument, the
 a new .cal file will be produced and should be used to process the data.
 
-Nitrogen concentrations are calculated following Johnson et al 2016.
+Nitrogen concentrations are calculated following Johnson et al. (2016).
 
 Each cell in the worksheet can be executed using the run section button 
 or by typing ctrl-enter into the command line
@@ -66,7 +66,7 @@ aux.deltaP = -0.87; % [m]
 % define the optical wavelength offset, which is constant
 aux.OPTICAL_WAVELENGTH_OFFSET = 208.5; % [nm]
 
-% calculate nitrogen concentrations. MolarNitrate and Nitrate fields will
+% Calculate nitrogen concentrations. MolarNitrate and Nitrate fields will
 % be added to the .dat structure and contain concentrations in units of 
 micromol/L and micromole/kg, respectively.
 [dat] = APF2NO( dat, cal, aux ); 
